@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Jesture Recognization</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h3 id="title" class="btn btn-primary">Gesture Web App
+                <br>
+                <span>	&#9996;</span>
+                <span>	&#129310;</span>
+                <span>	&#129304;</span>
+                <span>	&#129305;</span>
+                <span>	&#128076;</span>
+                <span>	&#128077;</span>
+            </h3>
+            <h3>Take A Selfie of A Gesture To Know About Its Meaning</h3>
+            <h2>On The Following Gestures The Model Is Trained:
+                <br>
+                <br>
+                <span>  &#128077;</span>
+                <span>	&#128078;</span>
+                <span>	&#128075;</span>
+                <span>	&#128079;</span>
+                <span>	&#128076;</span>
+            </h2>
+
+            <br>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <br>
+                <label>Webcam view - </label>
+                <div id="webcam"></div>
+                    <button id="capture_btn" class="btn btn-warning" onclick="capture()" type="button" > Capture </button>
+                </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label>Prediction 1- </label>
+                <p id="pred1"></p>
+                <p id="emoji1"></p>
+            <br>
+                <label>Prediction 2 - </label>
+                <p id="pred2"></p>
+                <p id="emoji2"></p>
+            </div>
+
+            <br><br>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot - </label>
+                <div id="snapshot"></div>
+                <button id="check_btn" class="btn btn-success" onclick="check()" type="button"> Check </button>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

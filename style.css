@@ -1,0 +1,9 @@
+body {
+    background-color: aqua;
+}
+
+#title {
+    background-color:blue;
+    font-size: larger;
+    border-radius: 17px;
+}
